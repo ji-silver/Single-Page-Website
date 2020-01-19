@@ -10,10 +10,11 @@ p {line-height: 1.75;}
 p {color: #8c8c8c;}
 
 /* a 링크 초기화 */
-a {color: #222; text-decoration: none;}
+a {color: #8c8c8c; text-decoration: none;}
 
 /* 폰트 초기화 */
 body, input, textarea, select, button, table {font-family: 'Raleway', sans-serif, AppleSDGothicNeo-Regular,'Malgun Gothic','맑은 고딕',dotum,'돋움',sans-serif; color: #222; font-size: 13px; line-height: 1.5;}
+a {font-family: 'Montserrat', sans-serif, AppleSDGothicNeo-Regular,'Malgun Gothic','맑은 고딕',dotum,'돋움',sans-serif; color: #222; font-size: 13px; line-height: 1.5;}
 
 /* 폰트 스타일 초기화 */
 em,address {font-style: normal;}
