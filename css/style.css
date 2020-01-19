@@ -1,10 +1,12 @@
 @charset "utf-8";
 /* 레이아웃 */
+body {background: #fbfaf8;}
 #page {position: relative; width: 100%; height: 100%;}
 #header {position: fixed; top: 0; left: 0; right: 0; z-index: 9; padding-top: 40px;}
 #mNav {display: none; position: absolute; top: 0; right: 0;}
 #banner {}
-#service {padding: 80px 0;}
+#service {padding: 80px 0; background: #fff;}
+#idea {}
 
 /* 가운데 영역 */
 .container {position: relative; width: 1280px; margin: 0 auto;}
@@ -36,6 +38,7 @@
 .slider .text_detail {position: relative; display: block; text-align: center; color: #fff;}
 .slider .text_detail h2 {display: inline-block; margin-top: 350px; font-size: 26px; line-height: 1em;}
 .slider .text_detail strong {display: block; font-size: 42px;}
+.slider .text_detail p {color: #fff !important;}
 .slider .text_detail ul li {padding-top: 50px;}
 .slider .text_detail ul li a {background-color: #998675; color: #fff; padding: 15px 20px; font-size: 14px; font-weight: bold; text-transform: uppercase; border-radius: 5px; box-shadow: 1px 3px 0 1px #736357;}
 .slider .text_detail ul li a:hover {background-color: #fff; color: #998675;}
@@ -60,6 +63,16 @@
 .service .service_box .desc h2 {font-weight: 600; font-size: 22px; color: #555555;}
 .service .service_box .desc p {font-family: 'Montserrat', sans-serif; color: #8c8c8c; font-size: 14px;}
 
+/* idea */
+.idea {}
+.idea .txt_center {text-align: center; padding: 80px 0; width: 65%; margin: 0 auto;}
+.idea .txt_center h2 {font-size: 30px; font-weight: 600; color: #555555;}
+.idea .txt_center p {font-size: 16px;}
+.idea .browser {padding-top: 11.5%; position: relative;}
+.idea .browser .left {width: 50%; float: left;}
+.idea .browser .right {width: 50%; float: left;}
+.idea .browser .center {width: 60%; position: absolute; left: 0; right: 0; top: 0; margin: 0 auto;}
+
 /* 미디어쿼리 */
 @media (max-width: 1290px){
     .container {width: 100%;}
@@ -76,6 +89,7 @@
     .header .logo {position: absolute; left: 30px;}
     .header .logo img {width: 40px;}
     .service .service_box {float: left; width: 100%; padding: 0 0 50px 0;}
+    .idea .txt_center {width: 100%;}
 
 }
 
@@ -84,7 +98,15 @@
 }
 
 @media (max-width: 600px){
+    .row {padding: 0 24px;}
 
+    .slider .text_detail strong {display: inline-block; margin-top: 200px;}
+    .slider .text_detail h2 {display: none;}
+    .slider .text_detail ul li {padding-top: 30px;}
+    .text_detail p {display: none;}
+    .slider {height: 550px;}
+    .slider .bg {height: 550px;}
+    
 }
 
 @media (max-width: 480px){
