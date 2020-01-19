@@ -65,13 +65,13 @@ body {background: #fbfaf8;}
 
 /* idea */
 .idea {}
-.idea .txt_center {text-align: center; padding: 80px 0; width: 65%; margin: 0 auto;}
+.idea .txt_center {text-align: center; padding: 80px 0 40px 0; width: 65%; margin: 0 auto;}
 .idea .txt_center h2 {font-size: 30px; font-weight: 600; color: #555555;}
 .idea .txt_center p {font-size: 16px;}
-.idea .browser {padding-top: 11.5%; position: relative;}
-.idea .browser .left {width: 50%; float: left;}
-.idea .browser .right {width: 50%; float: left;}
-.idea .browser .center {width: 60%; position: absolute; left: 0; right: 0; top: 0; margin: 0 auto;}
+.browser {padding-top: 11.5%; position: relative;}
+.browser .left {width: 50%; float: left;}
+.browser .right {width: 50%; float: left;}
+.browser .center {width: 60%; position: absolute; left: 0; right: 0; top: 0; margin: 0 auto;}
 
 /* 미디어쿼리 */
 @media (max-width: 1290px){
