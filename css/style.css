@@ -7,6 +7,7 @@ body {background: #fbfaf8;}
 #banner {}
 #service {padding: 80px 0; background: #fff;}
 #idea {}
+#project { background: #fff;}
 
 /* 가운데 영역 */
 .container {position: relative; width: 1280px; margin: 0 auto;}
@@ -18,7 +19,7 @@ body {background: #fbfaf8;}
 .header {}
 .header .logo {padding-left: 0; display: inline-block;}
 .header .logo img {width: 64px;}
-.header .nav {font-family: 'Montserrat', sans-serif; float: right;}
+.header .nav {float: right;}
 .header .nav ul {margin-top: 20px;}
 .header .nav ul li {display: inline;}
 .header .nav ul li a {font-size: 17px; color: #fff; padding-right :10px;}
@@ -65,13 +66,22 @@ body {background: #fbfaf8;}
 
 /* idea */
 .idea {}
-.idea .txt_center {text-align: center; padding: 80px 0 40px 0; width: 65%; margin: 0 auto;}
-.idea .txt_center h2 {font-size: 30px; font-weight: 600; color: #555555;}
-.idea .txt_center p {font-size: 16px;}
-.browser {padding-top: 11.5%; position: relative;}
+.txt_center {text-align: center; padding: 80px 0 40px 0; margin: 0 auto; width: 60%;}
+.txt_center h2 {font-size: 30px; font-weight: 600; color: #555555;}
+.txt_center p {font-size: 16px;}
+
+.browser {padding-top: 11.6%; position: relative;}
 .browser .left {width: 50%; float: left;}
 .browser .right {width: 50%; float: left;}
 .browser .center {width: 60%; position: absolute; left: 0; right: 0; top: 0; margin: 0 auto;}
+
+/* project */
+.project {}
+.project .category {}
+.project .category ul { text-align: center;}
+.project .category ul li {display: inline;}
+.project .category ul li a {font-size: 14px; margin: 0 5px; padding: 10px 20px; background: #fff; border: 1px solid #ebebeb; border-radius: 5px;}
+.project .category ul li a.active {background: #998675; color: #fff;}
 
 /* 미디어쿼리 */
 @media (max-width: 1290px){
@@ -89,7 +99,7 @@ body {background: #fbfaf8;}
     .header .logo {position: absolute; left: 30px;}
     .header .logo img {width: 40px;}
     .service .service_box {float: left; width: 100%; padding: 0 0 50px 0;}
-    .idea .txt_center {width: 100%;}
+    .txt_center {width: 100%;}
 
 }
 
@@ -100,7 +110,7 @@ body {background: #fbfaf8;}
 @media (max-width: 600px){
     .row {padding: 0 24px;}
 
-    .slider .text_detail strong {display: inline-block; margin-top: 200px;}
+    .slider .text_detail strong {display: inline; margin-top: 200px;}
     .slider .text_detail h2 {display: none;}
     .slider .text_detail ul li {padding-top: 30px;}
     .text_detail p {display: none;}
