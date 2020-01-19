@@ -110,7 +110,7 @@ body {background: #fbfaf8;}
 @media (max-width: 600px){
     .row {padding: 0 24px;}
 
-    .slider .text_detail strong {display: inline; margin-top: 200px;}
+    .slider .text_detail strong {display: inline-block; margin-top: 200px;}
     .slider .text_detail h2 {display: none;}
     .slider .text_detail ul li {padding-top: 30px;}
     .text_detail p {display: none;}
