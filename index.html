@@ -27,10 +27,10 @@
 </head>
 <body>
     <div id="page">
-            <header id="header">
-                <div class="container">
-                    <div class="row">
-                        <div class="header">
+        <header id="header">
+            <div class="container">
+                <div class="row">
+                    <div class="header">
                             <a href="#" class="logo"><img src="img/logo.png" alt="logo"></a>
                             <nav id="mNav">
                                 <a href="#" class="ham"><i class="fa fa-bars" aria-hidden="true"></i></a>
@@ -49,10 +49,10 @@
                                     <li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
                                 </ul>
                             </nav>
-                        </div>
                     </div>
                 </div>
-            </header>
+            </div>
+        </header>
         <!-- //header -->
 
         <section id="banner">
@@ -68,9 +68,9 @@
                                             <strong>Ji-eun Kim Portfolio</strong>
                                             <p>Nam liber tempor cum soluta nobis eleifend option congue nihil
                                             </br>imperdiet doming id quod mazim placerat facer possim assum.</p>
-                                            <ul>
-                                                <li><a href="#">Get Started</a></li>
-                                            </ul>
+                                            <div class="more">
+                                                <button>Get Started</button>
+                                            </div>
                                         </span>
                                     </div>
                                 </div>
@@ -85,9 +85,9 @@
                                             <strong>Ji-eun Kim Portfolio</strong>
                                             <p>Nam liber tempor cum soluta nobis eleifend option congue nihil
                                             </br>imperdiet doming id quod mazim placerat facer possim assum.</p>
-                                            <ul>
-                                                <li><a href="#">Get Started</a></li>
-                                            </ul>
+                                            <div class="more">
+                                                <button>Get Started</button>
+                                            </div>
                                         </span>
                                     </div>
                                 </div>
@@ -102,9 +102,9 @@
                                             <strong>Ji-eun Kim Portfolio</strong>
                                             <p>Nam liber tempor cum soluta nobis eleifend option congue nihil
                                             </br>imperdiet doming id quod mazim placerat facer possim assum.</p>
-                                            <ul>
-                                                <li><a href="#">Get Started</a></li>
-                                            </ul>
+                                            <div class="more">
+                                                <button>Get Started</button>
+                                            </div>
                                         </span>
                                     </div>
                                 </div>
@@ -168,11 +168,11 @@
                         <p>Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
                     </div>
                 </div>
-            </div>
-            <div class="browser clearfix">
-                <div class="left"><img src="img/browser-left.jpg" alt="이미지"></div>
-                <div class="right"><img src="img/browser-right.jpg" alt="이미지"></div>
-                <div class="center"><img src="img/browser-center.jpg" alt="이미지"></div>
+                <div class="browser clearfix">
+                    <div class="left"><img src="img/browser-left.jpg" alt="이미지"></div>
+                    <div class="right"><img src="img/browser-right.jpg" alt="이미지"></div>
+                    <div class="center"><img src="img/browser-center.jpg" alt="이미지"></div>
+                </div>
             </div>
         </div>
     </section>
@@ -187,21 +187,67 @@
                         <p>Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
                     </div>
                     <div class="category">
-                        <ul>
-                            <li><a href="#" class="active">&ensp;All&ensp;</a></li>
-                            <li><a href="#">Web Design</a></li>
-                            <li><a href="#">Mobile App</a></li>
-                            <li><a href="#">Illustration</a></li>
-                            <li><a href="#">Photography</a></li>
-                        </ul>
+                        <button class="btn active">All</button>
+                        <button class="btn">Web Design</button>
+                        <button class="btn">Mobile App</button>
+                        <button class="btn">Illustration</button>
+                        <button class="btn">Photography</button>
                     </div>
-                    <div>
-                        
+                    <div class="grid clearfix">
+                        <div class="col">
+                            <div class="img" style="background-image: url(img/project1.jpg);"></div>
+                            <div class="img_info">
+                                <h2>Claritas Etiam Processus</h2>
+                                <p>Photography, Nature</p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="img" style="background-image: url(img/project2.jpg);"></div>
+                            <div class="img_info">
+                                <h2>Quam Nutamus Farum</h2>
+                                 <p>Graphic Design, Mock-Up</p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="img" style="background-image: url(img/project3.jpg);"></div>
+                            <div class="img_info">
+                                <h2>Usus Legentis Videntur</h2>
+                                <p>Photography, Holiday</p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="img" style="background-image: url(img/project4.jpg);"></div>
+                            <div class="img_info">
+                                <h2>Claritas Etiam Processus</h2>
+                                <p>Photography, Nature</p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="img" style="background-image: url(img/project5.jpg);"></div>
+                            <div class="img_info">
+                                <h2>Quam Nutamus Farumr</h2>
+                                <p>Graphic Design, Mock-Up</p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="img" style="background-image: url(img/project6.jpg);"></div>
+                            <div class="img_info">
+                                <h2>Usus Legentis Videntur</h2>
+                                <p>Photography, Holiday</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="more">
+                        <button>load more</button>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <!-- //project -->
+
+
+
     </div>
     <!-- 자바스크립트 라이브러리 -->
     <script src="js/jquery.min_1.12.4.js"></script>
