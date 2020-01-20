@@ -7,7 +7,17 @@ body {background: #fbfaf8;}
 #banner {}
 #service {padding: 80px 0; background: #fff;}
 #idea {}
-#project { background: #fff;}
+#project {background: #fff}
+
+/* 버튼 공통 */
+.more {text-align: center; padding-top: 10px;}
+.more button{background-color: #998675; color: #fff; padding: 15px 40px; font-size: 14px; font-weight: bold; text-transform: uppercase; border-radius: 5px; box-shadow: 0 4px #736357; transition: 0.3s; cursor: pointer;}
+.more button:hover {background-color: #c7b299;}
+
+/* 타이틀 공통 */
+.txt_center {text-align: center; padding: 80px 0 40px 0; margin: 0 auto; width: 60%;}
+.txt_center h2 {font-size: 30px; font-weight: 600; color: #555555;}
+.txt_center p {font-size: 16px;}
 
 /* 가운데 영역 */
 .container {position: relative; width: 1280px; margin: 0 auto;}
@@ -37,12 +47,14 @@ body {background: #fbfaf8;}
 .slider .sl3 {background: url(../img/banner03.jpg) no-repeat; background-size: cover;}
 .slider .bg {background-color:rgba(0, 0, 0, 0.6); width: 100%; height: 800px;}
 .slider .text_detail {position: relative; display: block; text-align: center; color: #fff;}
-.slider .text_detail h2 {display: inline-block; margin-top: 350px; font-size: 26px; line-height: 1em;}
+.slider .text_detail h2 {display: inline-block; margin-top: 300px; font-size: 26px; line-height: 1em;}
 .slider .text_detail strong {display: block; font-size: 42px;}
-.slider .text_detail p {color: #fff !important;}
-.slider .text_detail ul li {padding-top: 50px;}
-.slider .text_detail ul li a {background-color: #998675; color: #fff; padding: 15px 20px; font-size: 14px; font-weight: bold; text-transform: uppercase; border-radius: 5px; box-shadow: 1px 3px 0 1px #736357;}
-.slider .text_detail ul li a:hover {background-color: #fff; color: #998675;}
+.slider .text_detail p {color: #fff !important; padding-bottom: 40px;}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {border: 2px solid #d3c1ad !important; background-color: transparent !important;}
+.swiper-pagination-white {
+    --swiper-pagination-color: none !important;}
+.swiper-pagination-bullet {background-color: #8f9092 !important; background-clip: padding-box !important;}    
 
 /* service */
 .service {overflow: hidden; text-align: center;}
@@ -66,22 +78,27 @@ body {background: #fbfaf8;}
 
 /* idea */
 .idea {}
-.txt_center {text-align: center; padding: 80px 0 40px 0; margin: 0 auto; width: 60%;}
-.txt_center h2 {font-size: 30px; font-weight: 600; color: #555555;}
-.txt_center p {font-size: 16px;}
-
-.browser {padding-top: 11.6%; position: relative;}
-.browser .left {width: 50%; float: left;}
-.browser .right {width: 50%; float: left;}
-.browser .center {width: 60%; position: absolute; left: 0; right: 0; top: 0; margin: 0 auto;}
+.idea .browser {padding-top: 11.6%; position: relative;}
+.idea .browser .left {width: 50%; float: left;}
+.idea .browser .right {width: 50%; float: left;}
+.idea .browser .center {width: 60%; position: absolute; left: 0; right: 0; top: 0; margin: 0 auto;}
 
 /* project */
 .project {}
-.project .category {}
-.project .category ul { text-align: center;}
-.project .category ul li {display: inline;}
-.project .category ul li a {font-size: 14px; margin: 0 5px; padding: 10px 20px; background: #fff; border: 1px solid #ebebeb; border-radius: 5px;}
-.project .category ul li a.active {background: #998675; color: #fff;}
+.project .category {text-align: center;}
+.project .category .btn {font-size: 14px; margin: 5px 5px; padding: 5px 25px; background: #fff; border: 1px solid #ebebeb; border-radius: 5px; transition: 0.3s; cursor: pointer;}
+.project .category .btn:hover {background: #998675; color: #fff;}
+.project .category .active {background: #998675; color: #fff;}
+
+.project .grid {padding-top: 35px;}
+.project .grid .col {float: left; padding: 0 15px; margin-bottom: 30px; width: 33.3333%; box-sizing: border-box;}
+.project .grid .col .img {background: center center no-repeat; background-size: cover; max-width: 100%; height: 237px; overflow: hidden; position: relative;}
+.project .grid .col .img_info {padding: 30px; background: #fbfaf8; position: relative;}
+.project .grid .col .img_info::before {content: ""; display: block; position: absolute; left: 24px; top: -11px; border-bottom: 11px solid #fff; width: 0; height: 0; border-left: 14px solid transparent; border-right: 14px solid transparent; }
+.project .grid .col .img_info h2 {font-size: 20px; color: #c7b299; font-weight: 500; white-space: nowrap; text-overflow: ellipsis; overflow: hidden;}
+.project .grid .col .img_info p {font-size: 14px; white-space: nowrap; text-overflow: ellipsis; overflow: hidden;}
+
+
 
 /* 미디어쿼리 */
 @media (max-width: 1290px){
@@ -93,34 +110,37 @@ body {background: #fbfaf8;}
 
 @media (max-width: 960px){
     #mNav {display: block; right: 30px;}
-
-    .row {padding: 0 100px;}
+    
     .nav {display: none;}
     .header .logo {position: absolute; left: 30px;}
     .header .logo img {width: 40px;}
     .service .service_box {float: left; width: 100%; padding: 0 0 50px 0;}
     .txt_center {width: 100%;}
+    .project .grid .col {width: 50%; padding: 0 5px; }
 
 }
 
 @media (max-width: 768px){
-
+    .project .category {width: 100%;}
+    .project .category .btn {display: block; margin: 0 auto; margin-bottom: 5px;}
 }
 
 @media (max-width: 600px){
     .row {padding: 0 24px;}
-
-    .slider .text_detail strong {display: inline-block; margin-top: 200px;}
-    .slider .text_detail h2 {display: none;}
+    .slider .text_detail h2 {display: inline-block; margin-top: 190px;}
     .slider .text_detail ul li {padding-top: 30px;}
-    .text_detail p {display: none;}
     .slider {height: 550px;}
     .slider .bg {height: 550px;}
+    .swiper-button-prev:after,
+    .swiper-button-next:after {display: none;}
+    .project .grid .col {width: 100%; padding: 0;}
     
 }
 
 @media (max-width: 480px){
-    
+    .slider .text_detail h2,
+    .slider .text_detail p {display: none;}
+    .slider .text_detail strong {display: inline-block; margin-top: 200px;}
 }
 
 @media (max-width: 320px){
