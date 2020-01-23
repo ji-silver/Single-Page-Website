@@ -54,6 +54,21 @@
           nextEl: '.swiper-button-next',
           prevEl: '.swiper-button-prev',
         },
+        autoplay: {
+          delay: 5000,
+          },
+        breakpoints: {
+          // when window width is >= 0px
+          0: {
+            slidesPerView: 1,
+            spaceBetween: 30
+          },
+          // when window width is >= 601px
+          601: {
+            slidesPerView: 3,
+            spaceBetween: 40
+          }
+        }
         
       });
 })(jQuery);  
