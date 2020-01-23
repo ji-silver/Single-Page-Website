@@ -4,7 +4,7 @@ body {background: #fbfaf8;}
 #page {position: relative; width: 100%; height: 100%;}
 #header {position: fixed; top: 0; left: 0; right: 0; z-index: 9; padding: 25px 0; transition: top 0.3s;}
 #mNav {display: none; position: absolute; top: 0; right: 0;}
-#banner {height: 100%;}
+#banner {width: 100%; height: 100%;}
 #service {padding: 80px 0; background: #fff;}
 #idea {padding-top: 80px;}
 #project {background: #fff; padding: 80px 0;}
@@ -97,7 +97,7 @@ body {background: #fbfaf8;}
 .project .category .active {background: #998675; color: #fff;}
 
 .project .grid {padding-top: 35px;}
-.project .grid .col {float: left; padding: 0 15px; margin-bottom: 30px; width: 33.3333%; box-sizing: border-box;}
+.project .grid .col {float: left; padding: 0 15px; margin-bottom: 30px; width: 33.3333%; box-sizing: border-box; cursor: pointer;}
 .project .grid .col .img {background: center center no-repeat; background-size: cover; max-width: 100%; height: 237px; overflow: hidden; position: relative;}
 .project .grid .col .img_info {padding: 30px; background: #fbfaf8; position: relative;}
 .project .grid .col .img_info::before {
@@ -107,6 +107,10 @@ body {background: #fbfaf8;}
     left: 24px; top: -11px; border-bottom: 11px solid #fbfaf8; width: 0; height: 0;}
 .project .grid .col .img_info h2 {font-size: 20px; color: #c7b299; font-weight: 500; white-space: nowrap; text-overflow: ellipsis; overflow: hidden;}
 .project .grid .col .img_info p {font-size: 14px; white-space: nowrap; text-overflow: ellipsis; overflow: hidden;}
+.project .grid .col:hover .img_info {background: #362f2d;}
+.project .grid .col:hover .img_info::before {border-bottom: 11px solid #362f2d;}
+.project .grid .col:hover .img_info h2 {color: #fff;}
+.project .grid .col:hover .img_info p {color: #c7b299;}
 
 /* video */
 .video {background: url(../img/video.jpg) center center no-repeat; background-size: cover;}
@@ -158,7 +162,7 @@ body {background: #fbfaf8;}
 /* recent */
 .recent {}
 .recent .post {overflow: hidden;}
-.recent .post .p_col {float: left; width: 33.3333%; margin-bottom: 30px; border: 1px solid #f8f8f8; box-sizing: border-box; cursor: pointer;}
+.recent .post .p_col {float: left; width: 370px; margin-bottom: 30px; border: 1px solid #f8f8f8; box-sizing: border-box; cursor: pointer;}
 .recent .post .p_col .p_img {position: relative; background: center center no-repeat; background-size: cover; max-width: 100%; height: 220px; overflow: hidden; position: relative;}
 .recent .post .p_col .p_img .text_block {position: absolute; background-color: #363636; color: #fff; border-radius: 3px; left: 20px; top: 20px; text-align: center; min-width:50px; font-family: 'Montserrat', sans-serif;}
 .recent .post .p_col .p_img .text_block .day {display: block; font-size: 24px;}
@@ -184,11 +188,12 @@ body {background: #fbfaf8;}
 
 /* partner */
 .partner {background: url(../img/partners_bg.jpg) center center no-repeat; background-size: cover;}
-.partner .bg {background: rgba(0,0,0,0.6);}
-.partner .bg .logo {padding: 20px; width: 100%; margin: 0 auto;}
-.partner .bg .logo > div {width: 25%; float: left; padding: 10px; box-sizing: border-box; height:250px;}
-.partner .bg .logo a {display: inline-block;}
-.partner .bg .logo a img {max-width: 200px; height: auto;}
+.partner .bg {background: rgba(0,0,0,0.6); padding: 80px 0;}
+.partner .bg .logo {max-width: 100%; height: auto; box-sizing: border-box;}
+.partner .bg .logo > div {width: 25%; float: left; display: table;}
+.partner .bg .logo > div a {height: 220px; padding: 20px; display: table-cell; text-align: center; vertical-align: middle;}
+.partner .bg .logo > div a img {width: 80%; height: auto; display: inline-block; text-align: center;}
+
 
 /* 미디어쿼리 */
 @media (max-width: 1290px){
@@ -206,6 +211,7 @@ body {background: #fbfaf8;}
     .nav {display: none;}
     .header .logo {position: absolute; left: 30px;}
     .header .logo img {width: 40px;}
+    .slider .text_detail {padding-top: 150px; padding-bottom: 150px;}
     .service .service_box {float: left; width: 100%; padding: 0 0 50px 0;}
     .txt_center {width: 100%;}
     .swiper-button-prev:after,
@@ -228,12 +234,12 @@ body {background: #fbfaf8;}
 @media (max-width: 600px){
     .row {padding: 0 24px;}
     .project .grid .col {width: 100%; padding: 0;}
-    .recent .post .p_col {width: 100% !important;}
+
     
 }
 
 @media (max-width: 480px){
-
+    .slider .text_detail {padding-top: 100px; padding-bottom: 100px;}
 
 }
 
