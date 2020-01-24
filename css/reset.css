@@ -7,7 +7,7 @@ body,div,ul,li,dl,dd,dt,ol,h1,h2,h3,h4,h5,h6,input,fieldset,legend,p,select,tabl
 p {line-height: 1.75;}
 
 /* 색 초기화 */
-p {color: #8c8c8c;}
+p {color: #8c8c8c; }
 
 /* a 링크 초기화 */
 a {color: #8c8c8c; text-decoration: none;}
