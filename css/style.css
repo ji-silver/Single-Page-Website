@@ -13,7 +13,7 @@ body {background: #fbfaf8;}
 #counter {}
 #recent {background: #fff; padding: 80px 0 50px 0;}
 #partner {}
-#widget {background: #191919; padding: 70px 0 80px 0;}
+#widget {background: #191919; padding: 70px 0 60px 0;}
 
 /* 버튼 공통 */
 .more {text-align: center; padding-top: 10px;}
@@ -194,28 +194,50 @@ body {background: #fbfaf8;}
 .partner .bg .logo > div > div > div {float: left; display: table;}
 .partner .bg .logo > div > div > div a {padding: 20px; height: 220px; text-align: center; border-radius: 50%; display: table-cell; vertical-align: middle;}
 .partner .bg .logo > div > div > div a::after {content: ""; display: inline-block; height: 100%; vertical-align: middle;} 
-.partner .bg .logo > div > div > div a img {width: 80%; display: inline-block; vertical-align: middle;}
+.partner .bg .logo > div > div > div a img {display: inline-block; vertical-align: middle;}
 
 /* widget */
-.widget {overflow: hidden; width: 100%;}
-.widget .about {float: left; width: 25%; box-sizing: border-box;}
-.widget .about img {max-width: 181px; height: auto; padding-bottom: 30px;}
-.widget .post_desc {font-size: 14px; color: #555555; font-weight: 500;}
-.widget .posts {}
-.widget .posts h2 {font-size: 24px; color: #fff; font-weight: bold; padding: 20px 0 30px 0;}
-.widget .posts em {font-size: 12px; color: #363636;} 
-.widget .twitter {}
-.widget .dribbble {}
+.widget {overflow: hidden;}
+.widget h2 {font-size: 24px; color: #fff; font-weight: bold; padding: 20px 0 30px 0;}
+.widget .widget_desc {font-size: 15px; color: #555555;}
+.widget article em {color: #363636; font-size: 14px;}
+.widget article ul li hr {border: 1px solid #252525;}
 
+.widget article {float: left; width: 23.4444%;box-sizing: border-box; margin-bottom: 20px; margin-right: 2%; } 
+.widget article .footer_logo {width: 181px; padding-bottom: 30px;}
+.widget article .waxom {}
+.widget article .waxom a {color: #d1d1d1; font-size: 15px; padding-top: 30px; display: block; font-weight: 500;}
+.widget article .waxom a::after {font-family: FontAwesome; content: "\f0da"; padding: 10px;}
+
+.widget article .posts {}
+.widget article .posts ul {}
+.widget article .posts ul li {}
+.widget article .posts ul li a {}
+.widget article .posts ul li a:hover em {color: #fff;}
+.widget article .posts ul li a:hover .widget_desc {color: #c7b299;}
+
+.widget article .twitter {}
+.widget article .twitter ul li a {}
+.widget article .twitter ul li a strong {color: #00bff3; font-weight: normal;}
+.widget article .twitter ul li a b {color: #959595; font-weight: normal;}
+
+.widget article.last {margin-right: 0;}
+.widget article .dribbble {}
+.widget article .dribbble ul {}
+.widget article .dribbble ul li {}
+.widget article .dribbble ul li .photo {float: left; width: 130px; height: 98px; display: block; margin: 0 10px 10px 0; background:center center no-repeat; background-size: cover; position: relative;}
+.widget article .dribbble ul li a.none {margin-right: 0;}
 
 /* 미디어쿼리 */
 @media (max-width: 1290px){
     .container {width: 100%;}
+    .widget article .dribbble ul li .photo {width: 48%;}
 }
 
 @media (max-width: 1024px){
     .device .left_iphon {width: 50%;}
     .device .txt {width: 50%;}
+    
 }
 
 @media (max-width: 960px){
@@ -224,7 +246,6 @@ body {background: #fbfaf8;}
     .nav {display: none;}
     .header .logo {position: absolute; left: 30px;}
     .header .logo img {width: 50px;}
-    .slider .text_detail {padding-top: 150px; padding-bottom: 150px;}
     .service .service_box {float: left; width: 100%; padding: 0 0 50px 0;}
     .txt_center {width: 100%;}
     .swiper-button-prev:after,
@@ -233,6 +254,8 @@ body {background: #fbfaf8;}
     .device .left_iphon {width: 100%;}
     .device .txt {width: 100%;}
     .device .txt .f_desc {padding-left: 0;}
+
+    .widget article {width: 50%; margin-right: 0; padding: 0 10px;} 
     
 }
 
@@ -242,12 +265,14 @@ body {background: #fbfaf8;}
     .counter .inner .column {width: 100%; margin-bottom: 50px;}
     .counter .inner .column:last-child {margin-bottom: 0;}
     .counter .inner .column .counter_value {font-size: 60px;}
+
 }
 
 @media (max-width: 600px){
     .row {padding: 0 24px;}
     .project .grid .col {width: 100%; padding: 0;}  
-    .widget .about {width: 100%;}  
+    .widget article {width: 100%;}
+    .widget article {width: 100%; padding: 0;}
 }
 
 @media (max-width: 480px){
