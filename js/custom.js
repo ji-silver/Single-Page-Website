@@ -87,11 +87,7 @@
           prevEl: '.swiper-button-prev',
         },
         breakpoints: {
-          // when window width is > 0px
-          0: {
-            slidesPerView: 1,
-            spaceBetween: 20
-          },
+
           // when window width is > 320px
           321: {
             slidesPerView: 2,
