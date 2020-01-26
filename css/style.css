@@ -7,6 +7,7 @@ body {background: #fbfaf8;}
 #banner {width: 100%; height: 100%;}
 #service {padding: 80px 0; background: #fff;}
 #idea {padding-top: 80px;}
+#text_box {}
 #project {background: #fff; padding: 80px 0;}
 #video {}
 #device {padding-top: 75px;}
@@ -14,6 +15,7 @@ body {background: #fbfaf8;}
 #recent {background: #fff; padding: 80px 0 50px 0;}
 #partner {}
 #widget {background: #191919; padding: 70px 0 60px 0;}
+#footer {background: #111; padding: 40px 0 40px 0;}
 
 /* 버튼 공통 */
 .more {text-align: center; padding-top: 10px;}
@@ -83,12 +85,22 @@ body {background: #fbfaf8;}
 .service .ho3:hover h2 {color: #c7b299 !important;}
 .service .ho4:hover h2 {color: #c7b299 !important;}
 .service .service_box .desc h2 {font-weight: 600; font-size: 22px; color: #555555;}
-.service .service_box .desc p {font-weight: 500; color: #8c8c8c; font-size: 15px;}
+.service .service_box .desc p {color: #8c8c8c; font-size: 15px;}
 
 /* idea */
 .idea {}
 .idea .browser {}
-.idea .browser .center {width: 100%; left: 0; right: 0; top: 0; margin: 0 auto;}
+.idea .browser img {display: block;}
+
+/* text_box */
+.text_box {background:url(../img/gr_bg.jpg) center center no-repeat; background-size: cover;padding: 50px 0;}
+.text_box .wrap {position: relative;}
+.text_box .theme_txt {}
+.text_box .theme_txt h2 {font-size: 28px; color: #fff;}
+.text_box .theme_txt h2 em {color: #c7b299;}
+.text_box .theme_txt p {font-size: 18px; color: #615855;}
+.text_box .more {position: absolute; right: 0; top: 0;}
+.text_box .more button {}
 
 /* project */
 .project {}
@@ -106,7 +118,7 @@ body {background: #fbfaf8;}
     content: "";
     border-left: 14px solid transparent; border-right: 14px solid transparent;
     left: 24px; top: -11px; border-bottom: 11px solid #fbfaf8; width: 0; height: 0;}
-.project .grid .col .img_info h2 {font-size: 20px; color: #c7b299; font-weight: 500; white-space: nowrap; text-overflow: ellipsis; overflow: hidden;}
+.project .grid .col .img_info h2 {font-size: 20px; color: #c7b299; white-space: nowrap; text-overflow: ellipsis; overflow: hidden;}
 .project .grid .col .img_info p {font-size: 14px; white-space: nowrap; text-overflow: ellipsis; overflow: hidden;}
 .project .grid .col:hover .img_info {background: #362f2d;}
 .project .grid .col:hover .img_info::before {border-bottom: 11px solid #362f2d;}
@@ -129,9 +141,9 @@ body {background: #fbfaf8;}
     color: #fff; text-align: center; font-size: 30px; line-height: 70px; text-indent: 5px;
     border: 4px solid #fff; border-radius: 100%;
 }
-.video .bg .text_detail h2 {font-size: 30px; font-weight: 500; padding: 30px 0 15px 0;}
-.video .bg .text_detail p {color: #fff; font-size: 16px; max-width: 560px; margin: 0 auto;}
-.video .bg .text_detail p.time {color: #c7b299 !important; font-size: 14px; font-weight: 500; padding-top: 40px;}
+.video .bg .text_detail h2 {font-size: 30px; padding: 30px 0 15px 0;}
+.video .bg .text_detail p {color: #fff; font-size: 16px; max-width: 560px; margin: 0 auto; font-weight: normal;}
+.video .bg .text_detail p.time {color: #c7b299 !important; font-size: 14px; padding-top: 40px;}
 
 /* device */
 .device {display: block; box-sizing: border-box; margin: 0 auto; width: 90%;}
@@ -142,7 +154,7 @@ body {background: #fbfaf8;}
 .device .txt .f_tit {}
 .device .txt .f_tit strong {color: #555555; font-size: 30px;}
 .device .txt .f_tit p {font-size: 16px; margin: 40px 0;}
-.device .txt .f_desc {padding-left: 40px; font-weight: 500; margin-bottom: 30px;}
+.device .txt .f_desc {padding-left: 40px; margin-bottom: 30px;}
 .device .txt .f_desc ul {font-size: 16px; position: relative; }
 .device .txt .f_desc ul i {color: #c7b299; position: absolute; font-size: 20px;}
 .device .txt .f_desc ul li {color: #8c8c8c; margin-bottom: 10px; padding-left: 30px;}
@@ -169,7 +181,7 @@ body {background: #fbfaf8;}
 .recent .post .p_col .p_img .text_block .day {display: block; font-size: 24px;}
 .recent .post .p_col .p_img .text_block .month {display: block; background: #252525; border-radius: 3px;}
 .recent .post .p_col .img_desc {padding: 30px;}
-.recent .post .p_col .img_desc h2 {font-size: 20px; color: #555555; font-weight: 500; white-space: nowrap; text-overflow: ellipsis; overflow: hidden;}
+.recent .post .p_col .img_desc h2 {font-size: 20px; color: #555555; white-space: nowrap; text-overflow: ellipsis; overflow: hidden;}
 .recent .post .p_col .img_desc p {
     font-size: 14px;
     text-overflow: ellipsis; overflow: hidden;
@@ -179,7 +191,7 @@ body {background: #fbfaf8;}
     padding: 10px 0;
     max-height: 40px;
 }
-.recent .post .p_col .img_desc a {color: #c7b299; font-size: 14px; font-weight: 500; }
+.recent .post .p_col .img_desc a {color: #c7b299; font-size: 14px; font-weight: 500;}
 .recent .post .p_col .img_desc a::after {font-family: FontAwesome; content: "\f0da"; padding: 5px;}
 .recent .post .p_col:hover .text_block {background: #c7b299;}
 .recent .post .p_col:hover .text_block .month {background: #a48d72;}
@@ -199,64 +211,66 @@ body {background: #fbfaf8;}
 /* widget */
 .widget {overflow: hidden;}
 .widget h2 {font-size: 24px; color: #fff; font-weight: bold; padding: 20px 0 30px 0;}
-.widget .widget_desc {font-size: 15px; color: #555555;}
+.widget .widget_desc {font-size: 15px; color: #555555; font-family:'Montserrat', sans-serif;}
+.widget article a {font-weight: 500;}
 .widget article em {color: #363636; font-size: 14px;}
 .widget article ul li hr {border: 1px solid #252525;}
-
 .widget article {float: left; width: 23.4444%;box-sizing: border-box; margin-bottom: 20px; margin-right: 2%; } 
 .widget article .footer_logo {width: 181px; padding-bottom: 30px;}
-.widget article .waxom {}
-.widget article .waxom a {color: #d1d1d1; font-size: 15px; padding-top: 30px; display: block; font-weight: 500;}
+.widget article .waxom a {color: #d1d1d1; font-size: 15px; padding-top: 30px; display: block; font-weight: 400;}
 .widget article .waxom a::after {font-family: FontAwesome; content: "\f0da"; padding: 10px;}
-
-.widget article .posts {}
-.widget article .posts ul {}
-.widget article .posts ul li {}
-.widget article .posts ul li a {}
 .widget article .posts ul li a:hover em {color: #fff;}
 .widget article .posts ul li a:hover .widget_desc {color: #c7b299;}
-
-.widget article .twitter {}
-.widget article .twitter ul li a {}
 .widget article .twitter ul li a strong {color: #00bff3; font-weight: normal;}
 .widget article .twitter ul li a b {color: #959595; font-weight: normal;}
-
 .widget article.last {margin-right: 0;}
-.widget article .dribbble {}
-.widget article .dribbble ul {}
-.widget article .dribbble ul li {}
 .widget article .dribbble ul li .photo {float: left; width: 130px; height: 98px; display: block; margin: 0 10px 10px 0; background:center center no-repeat; background-size: cover; position: relative;}
 .widget article .dribbble ul li a.none {margin-right: 0;}
+
+/* footer */
+.footer_info {position: relative;}
+.footer_info .info_left {}
+.footer_info .info_left li {position: relative; display: inline-block; color: #555555; font-size: 15px; padding-right: 26px;}
+.footer_info li::after {position: absolute; content: ''; right: 13px; top: 5px; width: 1px; height: 13px; background-color: #555555;}
+.footer_info .info_left li:last-child::after {width: 0; height: 0;}
+.footer_info .info_right li:last-child::after {width: 0; height: 0;}
+.footer_info .info_left li a {color: #555555; font-size: 15px; font-weight: 500;}
+.footer_info .info_left li a:hover {color: #c7b299;}
+.footer_info li em {color: #959595;}
+.footer_info .info_right {position: absolute; right: 0;}
+.footer_info .info_right li {position: relative; display: inline-block; color: #555555; font-size: 15px; padding-right: 26px;}
 
 /* 미디어쿼리 */
 @media (max-width: 1290px){
     .container {width: 100%;}
-    .widget article .dribbble ul li .photo {width: 48%;}
+    .widget article .dribbble ul li .photo {width: 47%;}
 }
 
 @media (max-width: 1024px){
     .device .left_iphon {width: 50%;}
     .device .txt {width: 50%;}
     .slider .text_detail {padding-top: 200px; padding-bottom: 200px;}
-    
 }
 
 @media (max-width: 960px){
     #mNav {display: block; right: 30px;}
-    
     .nav {display: none;}
     .header .logo {position: absolute; left: 30px;}
     .header .logo img {width: 50px;}
     .service .service_box {float: left; width: 100%; padding: 0 0 50px 0;}
     .txt_center {width: 100%;}
+    .text_box .theme_txt {text-align: center;}
+    .text_box .more {position: relative;}
     .swiper-button-prev:after,
     .swiper-button-next:after {display: none;}
     .project .grid .col {width: 50%; padding: 0 5px }
     .device .left_iphon {width: 100%;}
     .device .txt {width: 100%;}
     .device .txt .f_desc {padding-left: 0;}
-
+    .partner .bg {padding: 80px 0  80px 0 ;}
     .widget article {width: 50%; margin-right: 0; padding: 0 10px;} 
+    .footer_info {text-align: center;}
+    .footer_info .info_right {position: relative;}
     
 }
 
@@ -266,18 +280,16 @@ body {background: #fbfaf8;}
     .counter .inner .column {width: 100%; margin-bottom: 50px;}
     .counter .inner .column:last-child {margin-bottom: 0;}
     .counter .inner .column .counter_value {font-size: 60px;}
-
 }
 
 @media (max-width: 600px){
     .row {padding: 0 24px;}
     .project .grid .col {width: 100%; padding: 0;}  
-    .widget article {width: 100%;}
     .widget article {width: 100%; padding: 0;}
 }
 
 @media (max-width: 480px){
-    
+    .partner .bg .logo > div > div > div a img {width: 230px;}
 }
 
 @media (max-width: 320px){
