@@ -237,6 +237,7 @@ body {background: #fbfaf8;}
 @media (max-width: 1024px){
     .device .left_iphon {width: 50%;}
     .device .txt {width: 50%;}
+    .slider .text_detail {padding-top: 200px; padding-bottom: 200px;}
     
 }
 
