@@ -4,7 +4,7 @@ body {background: #fbfaf8;}
 #page {position: relative; width: 100%; height: 100%;}
 #header {position: fixed; top: 0; left: 0; right: 0; z-index: 9; padding: 25px 0;}
 #header.header-scrolled {
-    background: #000;
+    background: rgba(0,0,0,0.9);
     padding: 10px 0;
     transition: all 0.5s;
     height: 60px;
@@ -46,12 +46,13 @@ body {background: #fbfaf8;}
 .header .logo {padding-left: 0; display: inline-block;}
 .header .logo img {width: 60px; padding-top: 5px;}
 .header .nav-menu-container {float: right;}
-.header .nav-menu-container ul {margin-top: 20px;}
-.header .nav-menu-container ul li {display: inline;}
-.header .nav-menu-container ul li.active a {color: #c7b299;}
-.header .nav-menu-container ul li a {font-size: 15px; color: #fff; padding-right :15px;}
-.header .nav-menu-container ul li a.last {padding-right: 40px;}
-.header .nav-menu-container ul li a:hover {color: #c7b299;}
+.header .nav-menu-container .navbar {margin: 0 10px;}
+.header .nav-menu-container .nav-menu {margin-top: 20px; float: left;}
+.header .nav-menu-container .nav-menu li {display: inline;}
+.header .nav-menu-container .nav-menu li.active a {color: #c7b299;}
+.header .nav-menu-container .nav-menu li a {font-size: 15px; color: #fff; padding-right :15px;}
+.header .nav-menu-container .nav-menu li a:hover {color: #c7b299;}
+.header .nav-menu-container .nav-menu .icon_gr {}
 
 /* 모바일 메뉴 */
 .ham {color: #fff; font-size: 30px;}
@@ -96,7 +97,6 @@ body {background: #fbfaf8;}
 .idea {}
 .idea .browser {}
 .idea .browser img {display: block;}
-
 .text_box {background:url(../img/gr_bg.jpg) center center no-repeat; background-size: cover;padding: 50px 0;}
 .text_box .wrap {position: relative;}
 .text_box .theme_txt h2 {font-size: 28px; color: #fff;}
@@ -158,6 +158,7 @@ body {background: #fbfaf8;}
     color: #fff; text-align: center; font-size: 30px; line-height: 70px; text-indent: 5px;
     border: 4px solid #fff; border-radius: 100%;
 }
+.video .bg .text_detail .play:hover i {color: #c7b299;}
 .video .bg .text_detail h2 {font-size: 30px; padding: 30px 0 15px 0;}
 .video .bg .text_detail p {color: #fff; font-size: 16px; max-width: 560px; margin: 0 auto; font-weight: normal;}
 .video .bg .text_detail p.time {color: #c7b299 !important; font-size: 14px; padding-top: 40px;}
@@ -273,10 +274,15 @@ body {background: #fbfaf8;}
 }
 
 @media (max-width: 960px){
-    #mNav {display: block; right: 10px; line-height: 5.5;}
-    .nav-menu-container {display: none;}
-    .header .logo {display: flex; align-items: center; justify-content: center;}
-    .header .logo img {display: block; text-align: center;}
+    #mNav {display: block; left: 10px; line-height: 5.5;}
+    .header .nav-menu-container .navbar {display: none;}
+    .header .nav-menu-container .nav-menu {margin-top: 0;}
+    .header .nav-menu-container .nav-menu li {position: absolute; top: 0; right: 10px;}
+    .header .nav-menu-container .nav-menu li a {padding-right: 0;}
+    .header .nav-menu-container .nav-menu li a i.fa-user-o {display: none;}
+    .header .nav-menu-container .nav-menu li a i {font-size: 30px; line-height: 2;}
+    .header .logo {text-align: center; display: block;}
+    .header .logo img {display: block; margin: 0 auto; padding-top: 0; width: 70px;}
     .service .service_box {float: left; width: 100%; padding: 0 0 50px 0;}
     .txt_center {width: 100%;}
     .text_box .theme_txt {text-align: center;}
@@ -317,3 +323,5 @@ body {background: #fbfaf8;}
 @media (max-width: 320px){
     
 }    
+
+
