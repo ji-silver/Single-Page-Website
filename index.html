@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/swiper.min.css">
     <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/grt-youtube-popup.css">
 
     <!-- 웹 폰트 -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700&display=swap" rel="stylesheet">
@@ -36,14 +37,15 @@
                             <a href="#" class="ham"><i class="fa fa-bars" aria-hidden="true"></i></a>
                         </nav>
                         <div class="nav-menu-container">
-                            <ul class="nav-menu clearfix">
+                            <ul class="nav-menu navbar">
                                 <li class="active"><a href="#banner" class="page-scroll">Home</a></li>
                                 <li><a href="#service" class="page-scroll">Service</a></li>
                                 <li><a href="#idea" class="page-scroll">Ideas</a></li>
                                 <li><a href="#project" class="page-scroll">Project</a></li>
-                                <li><a href="#video" class="page-scroll">Video</a></li>
                                 <li><a href="#recent" class="page-scroll">Post</a></li>
                                 <li><a href="#partner" class="page-scroll last">Partner</a></li>
+                            </ul>
+                            <ul class="nav-menu icon_gr">
                                 <li><a href="#"><i class="fa fa-user-o" aria-hidden="true"></i></a></li>
                                 <li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
                             </ul>
@@ -118,7 +120,7 @@
         <section id="service">
             <div class="container">
                 <div class="row">
-                    <div class="service clearfix">
+                    <div class="service clearfix" >
                         <article class="service_box ho1">
                             <span class="icon s1 ir_pm">Web & App Design</span>
                             <div class="desc">
@@ -161,7 +163,7 @@
                             <h2>Waxom is Realization of your Ideas.</h2>
                             <p>Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
                         </div>
-                        <div class="browser">
+                        <div class="browser fade-in" data-fade-in-speed="500">
                             <img src="img/browsers.png" alt="이미지">
                         </div>
                     </div>
@@ -200,90 +202,184 @@
                             <button class="btn">Illustration</button>
                             <button class="btn">Photography</button>
                         </div>
-                        <div class="grid clearfix">
-                            <div class="col">
-                                <div class="img" style="background-image: url(img/project1.jpg);">
-                                    <div class="overlay">
-                                        <a href="#" class="fa_icon" title="User Profile">
-                                            <i class="fa fa-link"></i>
-                                            <i class="fa fa-search"></i>
-                                         </a>
+                        <div class="grid_wrap">
+                            <div class="grid clearfix">
+                                <div class="col">
+                                    <div class="img" style="background-image: url(img/project1.jpg);">
+                                        <div class="overlay">
+                                            <a href="#" class="fa_icon" title="User Profile">
+                                                <i class="fa fa-link"></i>
+                                                <i class="fa fa-search"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="img_info">
+                                        <h2>Claritas Etiam Processus</h2>
+                                        <p>Photography, Nature</p>
                                     </div>
                                 </div>
-                                <div class="img_info">
-                                    <h2>Claritas Etiam Processus</h2>
-                                     <p>Photography, Nature</p>
+                            
+                                <div class="col">
+                                    <div class="img" style="background-image: url(img/project2.jpg);">
+                                        <div class="overlay">
+                                            <a href="#" class="fa_icon" title="User Profile">
+                                                <i class="fa fa-link"></i>
+                                                <i class="fa fa-search"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="img_info">
+                                        <h2>Quam Nutamus Farum</h2>
+                                        <p>Graphic Design, Mock-Up</p>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="img" style="background-image: url(img/project3.jpg);">
+                                        <div class="overlay">
+                                            <a href="#" class="fa_icon" title="User Profile">
+                                                <i class="fa fa-link"></i>
+                                                <i class="fa fa-search"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="img_info">
+                                        <h2>Usus Legentis Videntur</h2>
+                                        <p>Photography, Holiday</p>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="img" style="background-image: url(img/project4.jpg);">
+                                        <div class="overlay">
+                                            <a href="#" class="fa_icon" title="User Profile">
+                                                <i class="fa fa-link"></i>
+                                                <i class="fa fa-search"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="img_info">
+                                        <h2>Claritas Etiam Processus</h2>
+                                        <p>Photography, Nature</p>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="img" style="background-image: url(img/project5.jpg);">
+                                        <div class="overlay">
+                                            <a href="#" class="fa_icon" title="User Profile">
+                                                <i class="fa fa-link"></i>
+                                                <i class="fa fa-search"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="img_info">
+                                        <h2>Quam Nutamus Farumr</h2>
+                                        <p>Graphic Design, Mock-Up</p>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="img" style="background-image: url(img/project6.jpg);">
+                                        <div class="overlay">
+                                            <a href="#" class="fa_icon" title="User Profile">
+                                                <i class="fa fa-link"></i>
+                                                <i class="fa fa-search"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="img_info">
+                                        <h2>Usus Legentis Videntur</h2>
+                                        <p>Photography, Holiday</p>
+                                    </div>
                                 </div>
                             </div>
-                        
-                            <div class="col">
-                                <div class="img" style="background-image: url(img/project2.jpg);">
-                                    <div class="overlay">
-                                        <a href="#" class="fa_icon" title="User Profile">
-                                            <i class="fa fa-link"></i>
-                                            <i class="fa fa-search"></i>
-                                         </a>
+                            <div class="grid clearfix">
+                                <div class="col">
+                                    <div class="img" style="background-image: url(img/project3.jpg);">
+                                        <div class="overlay">
+                                            <a href="#" class="fa_icon" title="User Profile">
+                                                <i class="fa fa-link"></i>
+                                                <i class="fa fa-search"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="img_info">
+                                        <h2>Usus Legentis Videntur</h2>
+                                        <p>Photography, Holiday</p>
                                     </div>
                                 </div>
-                                <div class="img_info">
-                                    <h2>Quam Nutamus Farum</h2>
-                                    <p>Graphic Design, Mock-Up</p>
+                                <div class="col">
+                                    <div class="img" style="background-image: url(img/project5.jpg);">
+                                        <div class="overlay">
+                                            <a href="#" class="fa_icon" title="User Profile">
+                                                <i class="fa fa-link"></i>
+                                                <i class="fa fa-search"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="img_info">
+                                        <h2>Quam Nutamus Farumr</h2>
+                                        <p>Graphic Design, Mock-Up</p>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col">
-                                <div class="img" style="background-image: url(img/project3.jpg);">
-                                    <div class="overlay">
-                                        <a href="#" class="fa_icon" title="User Profile">
-                                            <i class="fa fa-link"></i>
-                                            <i class="fa fa-search"></i>
-                                         </a>
+                            <div class="grid clearfix">
+                                <div class="col">
+                                    <div class="img" style="background-image: url(img/project1.jpg);">
+                                        <div class="overlay">
+                                            <a href="#" class="fa_icon" title="User Profile">
+                                                <i class="fa fa-link"></i>
+                                                <i class="fa fa-search"></i>
+                                            </a>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="img_info">
-                                    <h2>Usus Legentis Videntur</h2>
-                                    <p>Photography, Holiday</p>
+                                    <div class="img_info">
+                                        <h2>Claritas Etiam Processus</h2>
+                                        <p>Photography, Nature</p>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col">
-                                <div class="img" style="background-image: url(img/project4.jpg);">
-                                    <div class="overlay">
-                                        <a href="#" class="fa_icon" title="User Profile">
-                                            <i class="fa fa-link"></i>
-                                            <i class="fa fa-search"></i>
-                                         </a>
+                            <div class="grid clearfix">
+                                <div class="col">
+                                    <div class="img" style="background-image: url(img/project2.jpg);">
+                                        <div class="overlay">
+                                            <a href="#" class="fa_icon" title="User Profile">
+                                                <i class="fa fa-link"></i>
+                                                <i class="fa fa-search"></i>
+                                            </a>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="img_info">
-                                    <h2>Claritas Etiam Processus</h2>
-                                    <p>Photography, Nature</p>
+                                    <div class="img_info">
+                                        <h2>Quam Nutamus Farum</h2>
+                                        <p>Graphic Design, Mock-Up</p>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col">
-                                <div class="img" style="background-image: url(img/project5.jpg);">
-                                    <div class="overlay">
-                                        <a href="#" class="fa_icon" title="User Profile">
-                                            <i class="fa fa-link"></i>
-                                            <i class="fa fa-search"></i>
-                                         </a>
+                            <div class="grid clearfix">
+                                <div class="col">
+                                    <div class="img" style="background-image: url(img/project4.jpg);">
+                                        <div class="overlay">
+                                            <a href="#" class="fa_icon" title="User Profile">
+                                                <i class="fa fa-link"></i>
+                                                <i class="fa fa-search"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="img_info">
+                                        <h2>Claritas Etiam Processus</h2>
+                                        <p>Photography, Nature</p>
                                     </div>
                                 </div>
-                                <div class="img_info">
-                                    <h2>Quam Nutamus Farumr</h2>
-                                    <p>Graphic Design, Mock-Up</p>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="img" style="background-image: url(img/project6.jpg);">
-                                    <div class="overlay">
-                                        <a href="#" class="fa_icon" title="User Profile">
-                                            <i class="fa fa-link"></i>
-                                            <i class="fa fa-search"></i>
-                                         </a>
+                                <div class="col">
+                                    <div class="img" style="background-image: url(img/project6.jpg);">
+                                        <div class="overlay">
+                                            <a href="#" class="fa_icon" title="User Profile">
+                                                <i class="fa fa-link"></i>
+                                                <i class="fa fa-search"></i>
+                                            </a>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="img_info">
-                                    <h2>Usus Legentis Videntur</h2>
-                                    <p>Photography, Holiday</p>
+                                    <div class="img_info">
+                                        <h2>Usus Legentis Videntur</h2>
+                                        <p>Photography, Holiday</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -295,14 +391,14 @@
             </div>
         </section>
         <!-- //project -->
-
+        
         <section id="video">
             <div class="video">
                 <div class="bg">
                     <div class="container">
                         <div class="row">
                             <span class="text_detail">
-                                <a href="#" class="play">
+                                <a href="#" class="play youtube-link" youtubeid="NJfgjcSr5qg">
                                     <i class="fa fa-play" aria-hidden="true"></i>
                                 </a>
                                 <h2>Waxom Video Presentation</h2>
@@ -320,7 +416,7 @@
             <div class="container">
                 <div class="row">
                     <div class="device clearfix">
-                        <div class="left_iphon">
+                        <div class="left_iphon fade-in" data-fade-in-speed="500">
                             <img width="423" height="auto" src="img/iphon.png" alt="">
                         </div>
                         <div class="txt">
@@ -347,7 +443,7 @@
             <div class="counter">
                 <div class="container">
                     <div class="row">
-                        <div class="inner clearfix">
+                        <div class="inner clearfix ">
                             <div class="column line">
                                 <div class="icon c1"></div>
                                 <div class="counter_value" data-count="3587">0</div>
@@ -583,12 +679,17 @@
             </div>
         </footer>
         <!-- //footer -->
+
+        
     </div>
     <!-- 자바스크립트 라이브러리 -->
     <script src="js/jquery.min_1.12.4.js"></script>
     <script src="js/ie-checker.js"></script>
     <script src="js/swiper.min.js"></script>
-    <script src="js/iframe_api.js"></script>
     <script src="js/custom.js"></script> 
+    <script src="js/grt-youtube-popup.js"></script>
+    <script src="js/iframe_api.js"></script>
+    <script> $(".youtube-link").grtyoutube(); </script>
+    
 </body>
 </html>
