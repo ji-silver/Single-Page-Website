@@ -322,7 +322,7 @@ body.mobile-nav-active #mobile-nav-toggle {color: #fff;}
     #mobile-nav-toggle {display: inline;}
     #nav-menu-container {display: none;}
     
-    .header .logo {text-align: center; display: block;}
+    
     .header .logo img {display: block; padding-top: 0; width: 50px;}
     .banner {height: 700px;}
     .service .service_box {float: left; width: 100%; padding: 0 0 50px 0;}
