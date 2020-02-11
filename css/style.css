@@ -86,7 +86,7 @@ body.mobile-nav-active #mobile-nav-toggle {color: #fff;}
 
 /* 헤더 영역 */
 .header {position: relative;}
-.header .logo {display: flex; justify-content: center; align-items: center;}
+.header .logo {padding-left: 0; display: inline-block;}
 .header .logo img {width: 60px; padding-top: 5px;}
 .header #nav-menu-container {float: right;}
 .header #nav-menu-container .navbar {margin: 0 10px;}
@@ -322,7 +322,7 @@ body.mobile-nav-active #mobile-nav-toggle {color: #fff;}
     #mobile-nav-toggle {display: inline;}
     #nav-menu-container {display: none;}
     
-    
+    .header .logo {display: flex; justify-content: center; align-items: center;}
     .header .logo img {display: block; padding-top: 0; width: 50px;}
     .banner {height: 700px;}
     .service .service_box {float: left; width: 100%; padding: 0 0 50px 0;}
