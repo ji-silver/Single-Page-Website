@@ -11,7 +11,6 @@
       'id': ''
     });
     $('body').append($mobile_nav);
-    $('body').prepend('<button type="button" id="mobile-nav-toggle"><i class="fa fa-bars"></i></button>');
     $('body').append('<div id="mobile-body-overly"></div>');
 
     $(document).on('click', '#mobile-nav-toggle', function (e) {
